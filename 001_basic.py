@@ -1,15 +1,11 @@
 import numpy as np
 
 # Step 1: Define the problem and criteria
-decisions = ['Decision 1', 'Decision 2', 'Decision 3']
-criteria = ['Criterion 1', 'Criterion 2', 'Criterion 3']
+decisions = ["Decision 1", "Decision 2", "Decision 3"]
+criteria = ["Criterion 1", "Criterion 2", "Criterion 3"]
 
 # Step 2: Construct pairwise comparison matrix for criteria
-criteria_comparison = np.array([
-    [1, 3, 1/2],
-    [1/3, 1, 1/4],
-    [2, 4, 1]
-])
+criteria_comparison = np.array([[1, 3, 1 / 2], [1 / 3, 1, 1 / 4], [2, 4, 1]])
 
 # Step 3: Calculate the weight of each criterion
 criteria_sum = criteria_comparison.sum(axis=0)
@@ -19,21 +15,9 @@ criteria_weights = normalized_comparison.mean(axis=1)
 # Step 4: Construct pairwise comparison matrices for decisions for each criterion
 # Example matrices for each criterion
 decision_comparisons = [
-    np.array([
-        [1, 1/2, 3],
-        [2, 1, 4],
-        [1/3, 1/4, 1]
-    ]),
-    np.array([
-        [1, 3, 1/2],
-        [1/3, 1, 1/4],
-        [2, 4, 1]
-    ]),
-    np.array([
-        [1, 1/2, 1/3],
-        [2, 1, 1/4],
-        [3, 4, 1]
-    ])
+    np.array([[1, 1 / 2, 3], [2, 1, 4], [1 / 3, 1 / 4, 1]]),
+    np.array([[1, 3, 1 / 2], [1 / 3, 1, 1 / 4], [2, 4, 1]]),
+    np.array([[1, 1 / 2, 1 / 3], [2, 1, 1 / 4], [3, 4, 1]]),
 ]
 
 # Calculate the scores for each decision

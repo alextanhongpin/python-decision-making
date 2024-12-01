@@ -1,3 +1,5 @@
 # Paprika
 
-- https://en.wikipedia.org/wiki/Potentially_all_pairwise_rankings_of_all_possible_alternatives
+
+- `002_paprika.py`: https://en.wikipedia.org/wiki/Potentially_all_pairwise_rankings_of_all_possible_alternatives
+- `003_mcdm.py`: https://sustainabilitymethods.org/index.php/Multi-Criteria_Decision_Making_in_Python

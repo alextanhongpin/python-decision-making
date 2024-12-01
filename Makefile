@@ -1,6 +1,9 @@
 run:
-	@#poetry run python 001_basic.py
-	poetry run python 002_paprika.py
+	poetry run python $(name)
 
 shell:
 	poetry shell
+
+lint:
+	@poetry run python -m black *.py
+
